@@ -1,27 +1,37 @@
 console.clear()
-const box = document.querySelector('.box')
-const buttonRotate = document.querySelector('.button-rotate')
-const buttonBackground = document.querySelector('.button-background')
-const buttonRadius = document.querySelector('.button-radius')
-const buttonShake = document.querySelector('.button-shake')
+const box1 = document.querySelector('.box-1')
+const box2 = document.querySelector('.box-2')
+const box3 = document.querySelector('.box-3')
+const box4 = document.querySelector('.box-4')
+const button1 = document.querySelector('.button-1')
+const button2 = document.querySelector('.button-2')
+const button3 = document.querySelector('.button-3')
+const button4 = document.querySelector('.button-4')
 
-buttonRotate.addEventListener('click', () => {
-  box.classList.toggle('rotation-back')
-  box.classList.toggle('rotation')
+button1.addEventListener('click', () => {
+  box1.classList.remove('hidden')
+  box2.classList.add('hidden')
+  box3.classList.add('hidden')
+  box4.classList.add('hidden')
 })
 
-buttonBackground.addEventListener('click', () => {
-  box.classList.toggle('background')
+button2.addEventListener('click', () => {
+  box1.classList.add('hidden')
+  box2.classList.remove('hidden')
+  box3.classList.add('hidden')
+  box4.classList.add('hidden')
 })
 
-buttonRadius.addEventListener('click', () => {
-  box.classList.toggle('radius')
+button3.addEventListener('click', () => {
+  box1.classList.add('hidden')
+  box2.classList.add('hidden')
+  box3.classList.remove('hidden')
+  box4.classList.add('hidden')
 })
 
-buttonShake.addEventListener('click', () => {
-  box.classList.add('shake')
-  setTimeout(() => {
-    box.classList.remove('shake')
-    console.log('remove class shake')
-  }, 2500)
+button4.addEventListener('click', () => {
+  box1.classList.add('hidden')
+  box2.classList.add('hidden')
+  box3.classList.add('hidden')
+  box4.classList.remove('hidden')
 })

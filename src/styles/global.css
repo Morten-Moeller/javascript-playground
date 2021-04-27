@@ -8,10 +8,29 @@ body {
   height: 100vh;
 }
 
-.box {
+.hidden {
+  display: none;
+}
+
+.box-1 {
   width: 200px;
   height: 200px;
   background: hotpink;
+}
+.box-2 {
+  width: 200px;
+  height: 200px;
+  background: steelblue;
+}
+.box-3 {
+  width: 200px;
+  height: 200px;
+  background: goldenrod;
+}
+.box-4 {
+  width: 200px;
+  height: 200px;
+  background: olivedrab;
 }
 
 .background {
