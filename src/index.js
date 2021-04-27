@@ -13,6 +13,10 @@ button1.addEventListener('click', () => {
   box2.classList.add('hidden')
   box3.classList.add('hidden')
   box4.classList.add('hidden')
+  button1.classList.add('highlite')
+  button2.classList.remove('highlite')
+  button3.classList.remove('highlite')
+  button4.classList.remove('highlite')
 })
 
 button2.addEventListener('click', () => {
@@ -20,6 +24,10 @@ button2.addEventListener('click', () => {
   box2.classList.remove('hidden')
   box3.classList.add('hidden')
   box4.classList.add('hidden')
+  button1.classList.remove('highlite')
+  button2.classList.add('highlite')
+  button3.classList.remove('highlite')
+  button4.classList.remove('highlite')
 })
 
 button3.addEventListener('click', () => {
@@ -27,6 +35,10 @@ button3.addEventListener('click', () => {
   box2.classList.add('hidden')
   box3.classList.remove('hidden')
   box4.classList.add('hidden')
+  button1.classList.remove('highlite')
+  button2.classList.remove('highlite')
+  button3.classList.add('highlite')
+  button4.classList.remove('highlite')
 })
 
 button4.addEventListener('click', () => {
@@ -34,4 +46,8 @@ button4.addEventListener('click', () => {
   box2.classList.add('hidden')
   box3.classList.add('hidden')
   box4.classList.remove('hidden')
+  button1.classList.remove('highlite')
+  button2.classList.remove('highlite')
+  button3.classList.remove('highlite')
+  button4.classList.add('highlite')
 })

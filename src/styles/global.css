@@ -33,6 +33,10 @@ body {
   background: olivedrab;
 }
 
+.highlite {
+  background-color: indianred;
+}
+
 .background {
   transition: 1s ease-in-out;
   background: skyblue;
